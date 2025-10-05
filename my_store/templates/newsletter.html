@@ -1,0 +1,15 @@
+{% extends 'base.html' %}
+
+{% block title %}Page Title for My Store{% endblock %}
+
+{% block header %}
+    <h1>Important header stuff goes here</h1>
+{% endblock header %}
+
+{% block content %}
+    <p>Subscribe to our newsletter. that is you ip address {{ request }}</p>
+{% endblock content %}
+
+{% block footer %}
+    <h1>Copyright © {{ now|date:"Y" }} My Store. All rights reserved.</h1>
+{% endblock footer %}
