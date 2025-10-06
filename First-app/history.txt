@@ -1,0 +1,1000 @@
+  586  k get po 
+  587  k logs fastapi
+  588  k describe po fastapi 
+  589  docker ps
+  590  docker ps -a
+  591  docker rm 4d3b391431d2
+  592  docker rm 4d3b391431d24d3b391431d2 
+  593  docker rm f4b77eb84014
+  594  k run fastapi --image mirecloud/fastapi
+  595  k run fastapi-1 --image mirecloud/fastapi
+  596  docker run  --name fastapi -p 8000:8000 mirecloud/fastapi
+  597  docker images
+  598  curl http://127.0.0.1:8000
+  599  source <(kubectl completion bash) # configuração de autocomplete no bash do shell atual, o pacote bash-completion precisa ter sido instalado primeiro.
+  600  echo "source <(kubectl completion bash)" >> ~/.bashrc # para adicionar o aut
+  601  alias k=kubectl
+  602  complete -o default -F __start_kubectl k
+  603  k get nodes
+  604  k get ns
+  605  helm list -n tis
+  606  k -n tis get all
+  607  kubectl patch svc grafana -n tis   -p '{"spec": {"type": "LoadBalancer"}}'
+  608  k -n tis get all
+  609  k -n tis logs pod/grafana-6c66fbbdf4-gdsbw
+  610  k -n tis get all
+  611  k  get ns
+  612  k -n istio-ingress get all
+  613  k -n istio-system get all
+  614  helm list -n monitoring
+  615  helm repo list 
+  616  ls
+  617  ls 
+  618  pwd
+  619  cd /home/asd/
+  620  ls
+  621  cat monitoring-values.yaml 
+  622  ocker ps
+  623  docker images
+  624  kubectl get all -n gitlab
+  625  kubectl get all -n gitlab -w
+  626  kubectl get all -n gitlab 
+  627  kubectl get po -n gitlab 
+  628  kubectl  -n gitlab describe po gitlab-webservice-default-6f57f8dc8d-pbbcj
+  629  kubectl get po -n gitlab 
+  630  kubectl  -n gitlab describe po gitlab-webservice-default-6f57f8dc8d-cm9zc
+  631  kubectl  -n gitlab describe po gitlab-webservice-default-6f57f8dc8d-pbbcj
+  632  kubectl  -n gitlab describe po gitlab-webservice-default-6f57f8dc8d-cm9zc
+  633  kubectl get po -n gitlab 
+  634  kubectl  -n gitlab describe po gitlab-webservice-default-6f57f8dc8d-cm9zc
+  635  kubectl  -n gitlab logs  gitlab-webservice-default-6f57f8dc8d-cm9zc
+  636  kubectl  -n gitlab logs  gitlab-webservice-default-6f57f8dc8d-cm9zc -f
+  637  kubectl  -n gitlab logs  gitlab-webservice-default-6f57f8dc8d-cm9zc 
+  638  kubectl get po -n gitlab 
+  639  kubectl get svc -n gitlab 
+  640  kubectl get secret  -n gitlab 
+  641  kubectl  -n gitlab  get secret -o yaml gitlab-gitlab-initial-root-password
+  642  echo MTVJOHp0RmV5c1V4dFpCS2VYakZ1cE1uS2lncktuQmgxcEJncXJoMDJHeHdrUkpqN3ZEbFRhdmszTTc0dzFhOA== | base64 -d
+  643  kubectl get po -n gitlab
+  644  kubectl  -n gitlab describe po gitlab-gitlab-runner-65c64676cf-njwgj
+  645  kubectl  -n gitlab logs  gitlab-gitlab-runner-65c64676cf-njwgj
+  646  kubectl  -n gitlab delete po   gitlab-gitlab-runner-65c64676cf-njwgj
+  647  kubectl get po -n gitlab
+  648  kubectl  -n gitlab logs  gitlab-gitlab-runner-65c64676cf-gzj48
+  649  kubectl run -it dns-test --rm --image=busybox:1.28 -- nslookup gitlab.mirecloud.com
+  650  nano coredns-patch.yaml
+  651  kubectl apply -f coredns-patch.yaml
+  652  kubectl rollout restart deployment coredns -n kube-system
+  653  kubectl run -it dns-test --rm --image=busybox:1.28 -- nslookup gitlab.mirecloud.com
+  654  kubectl run -it dns-tes1t --rm --image=busybox:1.28 -- nslookup gitlab.mirecloud.com
+  655  kubectl  -n gitlab logs  gitlab-gitlab-runner-65c64676cf-gzj48
+  656  kubectl get po -n gitlab
+  657  kubectl -n gitlab delete po gitlab-gitlab-runner-65c64676cf-gzj48
+  658  kubectl get po -n gitlab
+  659  kubectl -n gitlab delete po gitlab-gitlab-runner-65c64676cf-gzj48 --froce
+  660  kubectl -n gitlab delete po gitlab-gitlab-runner-65c64676cf-gzj48 --force
+  661  kubectl get po -n gitlab
+  662  kubectl  -n gitlab logs  gitlab-gitlab-runner-65c64676cf-t4qmc
+  663  kubectl  -n gitlab describe po   gitlab-gitlab-runner-65c64676cf-t4qmc
+  664  kubectl  -n gitlab logs  gitlab-gitlab-runner-65c64676cf-t4qmc
+  665  kubectl get po -n gitlab
+  666  kubectl  -n gitlab delete po   gitlab-gitlab-runner-65c64676cf-t4qmc
+  667  kubectl get po -n gitlab
+  668  kubectl  -n gitlab describe po gitlab-gitlab-runner-65c64676cf-mzqjr
+  669  kubectl apply -f https://raw.githubusercontent.com/k8sgpt-ai/k8sgpt-operator/main/deploy/crds/k8sgpt.ai_v1alpha1_k8sgpt_cr.yaml
+  670  kubectl apply -f https://raw.githubusercontent.com/k8sgpt-ai/k8sgpt-operator/main/deploy/operator.yaml
+  671  kubectl apply -f https://raw.githubusercontent.com/k8sgpt-ai/k8sgpt-operator/main/deploy/crds/k8sgpt.ai_v1alpha1_k8sgpt_cr.yaml
+  672  kubectl delete  -f coredns-patch.yaml
+  673  cat coredns-patch.yaml 
+  674  kubectl apply   -f coredns-patch.yaml
+  675  k -n kube-system get all
+  676  source <(kubectl completion bash) # configuração de autocomplete no bash do shell atual, o pacote bash-completion precisa ter sido instalado primeiro.
+  677  echo "source <(kubectl completion bash)" >> ~/.bashrc # para adicionar o aut
+  678  alias k=kubectl
+  679  complete -o default -F __start_kubectl k
+  680  k -n kube-system get all
+  681  k -n kube-system descibe pod/coredns-59b4b5447c-44zbd
+  682  k -n kube-system describe pod/coredns-59b4b5447c-44zbd
+  683  ls
+  684  cd /home/asd/FastApi/
+  685  ls
+  686  cd SqlAlchemy
+  687  ls
+  688  cat requirements.txt 
+  689  cd ..
+  690  ls
+  691  nano Dockerfile 
+  692  python -v
+  693  python3 -v
+  694  python --version
+  695  python3 --version
+  696  nano Dockerfile 
+  697  ocker images
+  698  docker images
+  699  docker rmi 612c1eda658c f35c889e4f8e f35c889e4f8e f35c889e4f8e 48374675bfb7 
+  700  docker ps
+  701  docker ps -A
+  702  docker ps -a
+  703  docker rm 1a529ab5e01c
+  704  docker rmi 612c1eda658c f35c889e4f8e f35c889e4f8e f35c889e4f8e 48374675bfb7 
+  705  docker ps -a
+  706  docker images
+  707  docker rmi 612c1eda658c f35c889e4f8e f35c889e4f8e f35c889e4f8e 48374675bfb7 
+  708  docker rmi f35c889e4f8e
+  709  docker rmi f35c889e4f8e --force
+  710  docker images
+  711  docker build .
+  712  docker images
+  713  docker run  --name fastapi -p 8000:8000 5eca722cc88d
+  714  nano Dockerfile 
+  715  docker build .
+  716  docker images
+  717  docker run  --name fastapi -p 8000:8000 7fdd20b30328
+  718  docker ps
+  719  docker ps -a
+  720  docker rm aad5aec7fe32
+  721  docker ps -a
+  722  docker run  --name fastapi -p 8000:8000 7fdd20b30328
+  723  docker ps
+  724  docker ps -a
+  725  docker rm 0a6db1758e0f
+  726  docker rmi 7fdd20b30328
+  727  docker build .
+  728  docker images
+  729  docker run  --name fastapi -p 8000:8000 ef35f0963074
+  730  docker images
+  731  docker tag mirecloud/fastapi:1 ef35f0963074
+  732  docker tag ef35f0963074  mirecloud/fastapi:1 
+  733  docker push mirecloud/fastapi:1
+  734  docker push mirecloud/fastapi:1.0
+  735  docker tag ef35f0963074  mirecloud/fastapi:1.0 
+  736  docker push mirecloud/fastapi:1.0
+  737  nano Dockerfile 
+  738  ls SqlAlchemy
+  739  git add .
+  740  git commit -m "adding dockerfile"
+  741  git config --global user.email "info@mirecloud.com"
+  742  git config --global user.name  "mirecloud"
+  743  git commit -m "adding dockerfile"
+  744  git push -u origin main
+  745  docker login 
+  746  git push -u origin main
+  747  ls
+  748  rm -rf SqlAlchemy/__pycache__/
+  749  docker images
+  750  docker rmi ef35f0963074 ef35f0963074 5eca722cc88d 48374675bfb7 
+  751  docker ps -a
+  752  docker rm 696a3c2a9589
+  753  docker rmi ef35f0963074 ef35f0963074 5eca722cc88d 48374675bfb7 
+  754  docker images
+  755  docker rmi ef35f0963074 ef35f0963074 48374675bfb7 
+  756  docker ps -a
+  757  docker rmi 
+  758  docker rmi ef35f0963074 ef35f0963074 48374675bfb7  --force
+  759  docker images
+  760  ls
+  761  cd ..
+  762  ls
+  763  cd FastApi/
+  764  ls
+  765  docker build .
+  766  docker images
+  767  docker run  --name fastapi -p 8000:8000 40a499158730
+  768  docker images
+  769  docker tag 40a499158730 mirecloud/fastapi:1.0
+  770  docker push mirecloud/fastapi:1.0
+  771  docker rmi 40a499158730 48374675bfb7 --force
+  772  docker images
+  773  docker ps
+  774  docker ps -a
+  775  docker rm 4dab25e72608
+  776  docker images
+  777  helm repo add gitlab https://charts.gitlab.io/
+  778  helm repo update
+  779  k create ns gitlab
+  780  kubectl  create ns gitlab
+  781  helm upgrade --install gitlab gitlab/gitlab   --timeout 600s   --set global.hosts.domain=mirecloud.com   --set global.hosts.externalIP=192.168.2.110   --set certmanager-issuer.email=info@mirecloud.com  -n gitlab
+  782  dig @192.168.2.40 gitlab.mirecloud.com
+  783  source <(kubectl completion bash) # configuração de autocomplete no bash do shell atual, o pacote bash-completion precisa ter sido instalado primeiro.
+  784  echo "source <(kubectl completion bash)" >> ~/.bashrc # para adicionar o aut
+  785  alias k=kubectl
+  786  complete -o default -F __start_kubectl k
+  787  k get node
+  788  k get po -A
+  789  k -n kube-system get po 
+  790  k -n kube-system describe po coredns-59b4b5447c-44zbd
+  791  k -n kube-system logs  coredns-59b4b5447c-44zbd
+  792  k -n kube-system get cm
+  793  k -n kube-system get cm coredns -o yaml
+  794  kubectl rollout restart deployment coredns -n kube-system
+  795  k -n kube-system get po 
+  796  ls
+  797  nano coredns-patch.yaml 
+  798  k replace -f coredns-patch.yaml  --force
+  799  kubectl rollout restart deployment coredns -n kube-system
+  800  k -n kube-system get po 
+  801  k -n kube-system get cm coredns -o yaml
+  802  ls
+  803  cd /home/asd/
+  804  ls
+  805  helm list
+  806  helm list -n gitlab
+  807  helm values gitlab -n gitlab
+  808  helm -h
+  809  helm shows  values gitlab -n gitlab
+  810  helm show  values gitlab -n gitlab
+  811  ls /etc/resolv.conf 
+  812  cat  /etc/resolv.conf 
+  813  resolvectl status
+  814  ls /etc/resolv.conf ping mirecloud.com
+  815  ping mirecloud.com
+  816  nano /etc/resolv.conf 
+  817  ping mirecloud.com
+  818  k -n kube-system get cm coredns -o yaml
+  819  k -n kube-system get cm coredns -o yaml > coredns.yaml
+  820  nano coredns.yaml 
+  821  k replace -f coredns.yaml --force
+  822  kubectl rollout restart deployment coredns -n kube-system
+  823  k -n kube-system get po 
+  824  kubectl run -it dns-test --rm --image=busybox:1.28 -- nslookup gitlab.mirecloud.com
+  825  kubectl run -it dns-test --rm --image=busybox:1.28 -- nslookup ns.mirecloud.com
+  826  kubectl run -it dns-test1--rm --image=busybox:1.28 -- nslookup ns.mirecloud.com
+  827  kubectl run -it dns-test1--rm --image=curlimages/curl -- nslookup ns.mirecloud.com
+  828  kubectl run -it dns-test2 --rm --image=curlimages/curl -- nslookup ns.mirecloud.com
+  829  k -gitlab get po
+  830  k -n gitlab get po
+  831  k -n gitlab delete po gitlab-gitlab-runner-65c64676cf-gshnf
+  832  k -n gitlab get po
+  833  k -n gitlab describe gitlab-gitlab-runner-65c64676cf-dp4rl
+  834  k -n gitlab describe po  gitlab-gitlab-runner-65c64676cf-dp4rl
+  835  k -n gitlab describe logs  gitlab-gitlab-runner-65c64676cf-dp4rl
+  836  k -n gitlab logs  gitlab-gitlab-runner-65c64676cf-dp4rl
+  837  k -n kube-system get svc
+  838  k -n kube-system get po
+  839  k -n kube-system get svc
+  840  k -n kube-system get svc kube-dns -o yaml
+  841  k -n kube-system get po --show-labels
+  842  k -n kube-system get deployment --show-labels
+  843  k -n kube-system describe  deployment coredns
+  844  k -n kube-system get po
+  845  k -n kube-system get cm
+  846  k -n kube-system get cm coredns -o yaml
+  847  k -n gitlab get svc
+  848  k -n gitlab logs  gitlab-gitlab-runner-65c64676cf-dp4rl
+  849  kubectl rollout restart deployment coredns -n kube-system
+  850  k -n gitlab logs  gitlab-gitlab-runner-65c64676cf-dp4rl 
+  851  kubectl -n gitlab get secret
+  852  kubectl -n gitlab get secret gitlab-wildcard-tls -o yaml
+  853  kubectl -n gitlab get secret gitlab-gitlab-tls -o jsonpath="{.data.tls\.crt}" | base64 -d > gitlab.crt
+  854  cp gitlab.crt ca.crt
+  855  kubectl -n gitlab create configmap gitlab-ca --from-file=ca.crt=ca.crt
+  856  nano values.yaml
+  857  kubectl -n gitlab get po 
+  858  kubectl -n gitlab exec -it gitlab-gitlab-runner-65c64676cf-dp4rl -- /bin/sh
+  859  helm upgrade --install gitlab-runner gitlab/gitlab-runner -n gitlab -f values.yaml
+  860  --token glrt-CrAjM2ZvTnKbZuBkIYlgQm86MQpwOjEKdDozCnU6MQ8.01.171w8ik8g
+  861  nano values.yaml 
+  862  helm upgrade --install gitlab-runner gitlab/gitlab-runner -n gitlab -f values.yaml
+  863  kubectl -n gitlab get po 
+  864  kubectl -n gitlab describe po gitlab-runner-68656dddb4-8wxdh
+  865  k -n gitlab get secret 
+  866  cat values.yaml 
+  867  kubectl -n gitlab create secret  gitlab-ca --from-file=ca.crt=ca.crt
+  868  kubectl -n gitlab create secret generic gitlab-ca --from-file=ca.crt=ca.crt
+  869  kubectl -n gitlab describe po gitlab-runner-68656dddb4-8wxdh
+  870  kubectl -n gitlab get po 
+  871  kubectl -n gitlab delete po gitlab-runner-68656dddb4-8wxdh
+  872  kubectl -n gitlab get po 
+  873  kubectl -n gitlab describe po gitlab-runner-68656dddb4-4g7n5
+  874  kubectl -n gitlab get po 
+  875  kubectl -n gitlab delete po gitlab-runner-b4b4bfcc9-bsnjd
+  876  kubectl -n gitlab describe po gitlab-runner-68656dddb4-4g7n5
+  877  kubectl -n gitlab logs  gitlab-runner-68656dddb4-4g7n5
+  878  kubectl -n gitlab get secret gitlab-gitlab-tls -o jsonpath="{.data.tls\.crt}" | base64 -d > gitlab.mirecloud.com.crt
+  879  kubectl -n gitlab create secret generic gitlab-ca   --from-file=gitlab.mirecloud.com.crt=gitlab.mirecloud.com.crt
+  880  k -n gitlab delete secret gitlab-ca
+  881  kubectl -n gitlab create secret generic gitlab-ca   --from-file=gitlab.mirecloud.com.crt=gitlab.mirecloud.com.crt
+  882  nano values.yaml 
+  883  helm upgrade --install gitlab-runner gitlab/gitlab-runner -n gitlab -f values.yaml
+  884  kubectl -n gitlab exec -it deploy/gitlab-runner -- ls /etc/gitlab-runner/certs/
+  885  kubectl -n gitlab exec -it deploy/gitlab-runner -- whoami
+  886  kubectl -n gitlab exec -it deploy/gitlab-runner -- ls -l /etc/gitlab-runner
+  887  kubectl -n gitlab logs -f deploy/gitlab-runner
+  888  kubectl -n gitlab get po 
+  889  kubectl -n gitlab logs gitlab-runner-68656dddb4-4g7n5
+  890  kubectl -n gitlab create serviceaccount gitlab-runner
+  891  nano clusterrole.yaml
+  892  k apply -f clusterrole.yaml 
+  893  k apply -f clusterrolebinding.yaml 
+  894  nano  clusterrolebinding.yaml 
+  895  k apply -f clusterrolebinding.yaml
+  896  nano values.yaml 
+  897  helm upgrade --install gitlab-runner gitlab/gitlab-runner -n gitlab -f values.yaml
+  898  kubectl -n gitlab get po 
+  899  k -n gitlab describe po gitlab-runner-7bc946c9fb-46l9x
+  900  k -n gitlab logs gitlab-runner-7bc946c9fb-46l9x
+  901  kubectl -n gitlab get po 
+  902  cat clusterrole.yaml 
+  903  k -n gitlab logs gitlab-runner-7bc946c9fb-46l9x
+  904  k -n gitlab get clusterrole
+  905  k -n gitlab get clusterrole | grep gitlab
+  906  k -n gitlab get clusterrolebinding | grep gitlab
+  907  kubectl -n gitlab get pod -l app=gitlab-runner -o jsonpath="{.items[0].spec.serviceAccountName}"
+  908  cat values.yaml 
+  909  kubectl -n gitlab patch deployment gitlab-runner   -p '{"spec":{"template":{"spec":{"serviceAccountName":"gitlab-runner"}}}}'
+  910  kubectl -n gitlab get pod 
+  911  kubectl -n gitlab get pod -l app=gitlab-runner -o jsonpath="{.items[0].spec.serviceAccountName}"
+  912  nano clusterrole.yaml 
+  913  k apply -f clusterrole.yaml 
+  914  nano clusterrolebinding.yaml 
+  915  k apply -f clusterrolebinding.yaml 
+  916  history 
+  917  cat clusterrole.yaml 
+  918  cat values.yaml 
+  919  source <(kubectl completion bash) # configuração de autocomplete no bash do shell atual, o pacote bash-completion precisa ter sido instalado primeiro.
+  920  echo "source <(kubectl completion bash)" >> ~/.bashrc # para adicionar o aut
+  921  alias k=kubectl
+  922  complete -o default -F __start_kubectl k
+  923  k get node
+  924  sudo swapoff -a
+  925  sudo modprobe overlay
+  926  sudo modprobe br_netfilter
+  927  sudo tee /etc/modules-load.d/k8s.conf <<EOF
+  928  overlay
+  929  br_netfilter
+  930  EOF
+  931  k get node
+  932  k delete node-2
+  933  k delete node  node-2
+  934  k get node
+  935  k get po -A
+  936  k get po -n gitlab
+  937  k -n gitlab delete po gitlab-webservice-default-6f57f8dc8d-d475k gitlab-webservice-default-6f57f8dc8d-d8zpj gitlab-webservice-default-6f57f8dc8d-w664k gitlab-webservice-default-6f57f8dc8d-wldnx 
+  938  k -n gitlab delete po gitlab-webservice-default-6f57f8dc8d-d475k gitlab-webservice-default-6f57f8dc8d-d8zpj gitlab-webservice-default-6f57f8dc8d-w664k gitlab-webservice-default-6f57f8dc8d-wldnx  --force
+  939  k get po -n gitlab
+  940  k get po -A -wide
+  941  k get po -A --wide
+  942  k get po -A -o wide
+  943  k describe po nginx-ingress-ingress-nginx-controller-54dcdd574-gjgml
+  944  clear
+  945  kubeadm reset 
+  946  rm -rf /etc/cni/net.d
+  947  rm -rf $HOME/.kube/config
+  948  kubeadm init 
+  949  mkdir -p $HOME/.kube
+  950  kubectl get node
+  951  helm install cilium cilium/cilium --version 1.18.2   --namespace kube-system
+  952  kubectl get node
+  953  kubectl -n kube-system get node 
+  954  kubectl -n kube-system get po
+  955  kubectl get node
+  956  kubectl -n kube-system get po
+  957  kubectl -n kube-system logs coredns-7c65d6cfc9-shpwl
+  958  kubectl -n kube-system describe po  coredns-7c65d6cfc9-shpwl
+  959  kubectl -n kube-system get po
+  960  kubectl get node
+  961  kubectl describe node control
+  962  kubectl get node
+  963  kubectl -n kube-system get po
+  964  kubectl -n kube-system delete p coredns-7c65d6cfc9-shpwl
+  965  kubectl -n kube-system delete po coredns-7c65d6cfc9-shpwl
+  966  kubectl -n kube-system delete po coredns-7c65d6cfc9-spksx
+  967  kubectl -n kube-system get po
+  968  kubeadm reset 
+  969  rm -rf /etc/cni/net.d
+  970  rm -rf $HOME/.kube/config 
+  971  sudo swapoff -a
+  972  sudo modprobe overlay
+  973  sudo modprobe br_netfilter
+  974  sudo tee /etc/modules-load.d/k8s.conf <<EOF
+  975  overlay
+  976  br_netfilter
+  977  EOF
+  978  kubeadm init
+  979  mkdir -p $HOME/.kube
+  980  helm install cilium cilium/cilium --version 1.18.2   --namespace kube-system
+  981  kubectl -n kube-system get po
+  982  kubectl -n kube-system get po -w
+  983  kubectl get node
+  984  kubectl -n kube-system get po 
+  985  kubectl get node
+  986  kubectl -n kube-system get po 
+  987  kubectl -n kube-system describe po coredns-7c65d6cfc9-ht2gv
+  988  kubectl -n kube-system get po 
+  989  kubectl get nodes -o wide
+  990  kubectl describe node control
+  991  kubectl describe node node-1
+  992  kubectl -n kube-system get pods -l k8s-app=cilium
+  993  kubectl -n kube-system logs <cilium-pod-name>
+  994  kubectl -n kube-system logs cilium-k9jnl
+  995  ls -l /opt/cni/bin/
+  996  kubectl -n kube-system exec -it cilium-k9jnl -- cilium status
+  997  # Copie le binaire CNI
+  998  kubectl -n kube-system cp cilium-k9jnl:/opt/cni/bin/cilium-cni /opt/cni/bin/
+  999  # Vérifie qu'il est exécutable
+ 1000  chmod +x /opt/cni/bin/cilium-cni
+ 1001  kubectl -n kube-system exec -it cilium-k9jnl -- cilium status
+ 1002  kubectl get nodes -o wide
+ 1003  clear
+ 1004  kubeadm reset 
+ 1005  rm -rf /etc/cni/net.d
+ 1006  rm -rf $HOME/.kube/config
+ 1007  clear
+ 1008  reboot
+ 1009  sudo swapoff -a
+ 1010  sudo modprobe overlay
+ 1011  sudo modprobe br_netfilter
+ 1012  sudo tee /etc/modules-load.d/k8s.conf <<EOF
+ 1013  overlay
+ 1014  br_netfilter
+ 1015  EOF
+ 1016  kubeadm init
+ 1017  helm repo add cilium https://helm.cilium.io/
+ 1018  helm install cilium cilium/cilium --version 1.18.2   --namespace kube-system
+ 1019  kubectl get pods --all-namespaces -o custom-columns=NAMESPACE:.metadata.namespace,NAME:.metadata.name,HOSTNETWORK:.spec.hostNetwork --no-headers=true | grep '<none>' | awk '{print "-n "$1" "$2}' | xargs -L 1 -r kubectl delete pod
+ 1020  CILIUM_CLI_VERSION=$(curl -s https://raw.githubusercontent.com/cilium/cilium-cli/main/stable.txt)
+ 1021  CLI_ARCH=amd64
+ 1022  if [ "$(uname -m)" = "aarch64" ]; then CLI_ARCH=arm64; fi
+ 1023  curl -L --fail --remote-name-all https://github.com/cilium/cilium-cli/releases/download/${CILIUM_CLI_VERSION}/cilium-linux-${CLI_ARCH}.tar.gz{,.sha256sum}
+ 1024  sha256sum --check cilium-linux-${CLI_ARCH}.tar.gz.sha256sum
+ 1025  sudo tar xzvfC cilium-linux-${CLI_ARCH}.tar.gz /usr/local/bin
+ 1026  rm cilium-linux-${CLI_ARCH}.tar.gz{,.sha256sum}
+ 1027  cilium status --wait
+ 1028  cilium status 
+ 1029  kubectl get node
+ 1030  cilium status 
+ 1031  kubectl get node
+ 1032  cilium connectivity test
+ 1033  helm upgrade cilium cilium/cilium --version 1.18.2    --namespace kube-system    --reuse-values    --set hubble.relay.enabled=true
+ 1034  cilium status
+ 1035  hubble status -P
+ 1036  HUBBLE_VERSION=$(curl -s https://raw.githubusercontent.com/cilium/hubble/master/stable.txt)
+ 1037  HUBBLE_ARCH=amd64
+ 1038  if [ "$(uname -m)" = "aarch64" ]; then HUBBLE_ARCH=arm64; fi
+ 1039  curl -L --fail --remote-name-all https://github.com/cilium/hubble/releases/download/$HUBBLE_VERSION/hubble-linux-${HUBBLE_ARCH}.tar.gz{,.sha256sum}
+ 1040  sha256sum --check hubble-linux-${HUBBLE_ARCH}.tar.gz.sha256sum
+ 1041  sudo tar xzvfC hubble-linux-${HUBBLE_ARCH}.tar.gz /usr/local/bin
+ 1042  rm hubble-linux-${HUBBLE_ARCH}.tar.gz{,.sha256sum}
+ 1043  hubble status -P
+ 1044  history | grep helm 
+ 1045  hubble status -P
+ 1046  kubectl create ns gitlab
+ 1047  helm upgrade --install gitlab gitlab/gitlab   --timeout 600s   --set global.hosts.domain=mirecloud.com   --set global.hosts.externalIP=192.168.2.110   --set certmanager-issuer.email=info@mirecloud.com  -n gitlab
+ 1048  sudo swapoff -a
+ 1049  sudo modprobe overlay
+ 1050  sudo modprobe br_netfilter
+ 1051  sudo tee /etc/modules-load.d/k8s.conf <<EOF
+ 1052  overlay
+ 1053  br_netfilter
+ 1054  EOF
+ 1055  k get node
+ 1056  source <(kubectl completion bash) # configuração de autocomplete no bash do shell atual, o pacote bash-completion precisa ter sido instalado primeiro.
+ 1057  echo "source <(kubectl completion bash)" >> ~/.bashrc # para adicionar o aut
+ 1058  alias k=kubectl
+ 1059  complete -o default -F __start_kubectl k
+ 1060  k get node
+ 1061  k get po -A
+ 1062  k -n gitlab delete gitlab-gitlab-upgrade-check-twl6s
+ 1063  helm -n gitlab uninstall gitlab 
+ 1064  k -n gitlab describe po gitlab-gitlab-upgrade-check-xclz7
+ 1065  k get po -A
+ 1066  k -n gitlab describe po gitlab-shared-secrets-44b7c62-h42wl
+ 1067  helm upgrade --install gitlab gitlab/gitlab   --timeout 600s   --set global.hosts.domain=mirecloud.com   --set global.hosts.externalIP=192.168.2.110   --set certmanager-issuer.email=info@mirecloud.com  -n gitlab
+ 1068  k get po -A
+ 1069  k -n gitlab get po 
+ 1070  k -n gitlab get ingress
+ 1071  k -n gitlab get po 
+ 1072  k -n gitlab describe po gitlab-webservice-default-6f57f8dc8d-wm79c
+ 1073  k -n gitlab get po 
+ 1074  k -n gitlab describe po gitlab-webservice-default-6f57f8dc8d-wm79c
+ 1075  k -n gitlab get po 
+ 1076  k -n gitlab delete po gitlab-gitlab-upgrade-check-twl6s gitlab-gitlab-upgrade-check-xclz7 gitlab-gitlab-upgrade-check-xrd72 
+ 1077  k -n gitlab get po 
+ 1078  k -n gitlab delete po gitlab-webservice-default-6f57f8dc8d-2jwf7 gitlab-webservice-default-6f57f8dc8d-wm79c 
+ 1079  k -n gitlab get po 
+ 1080  k -n gitlab describe po gitlab-webservice-default-6f57f8dc8d-xs5mx
+ 1081  k -n gitlab get po 
+ 1082  kubectl get node
+ 1083  kubectl get node -o wide
+ 1084  ssh asd@192.168.2.27
+ 1085  kubectl get node -o wide
+ 1086  kubectl get ns
+ 1087  kubectl -n gitlab get all
+ 1088  kubectl -n gitlab get po
+ 1089  kubectl -n gitlab get svc
+ 1090  source <(kubectl completion bash) # configuração de autocomplete no bash do shell atual, o pacote bash-completion precisa ter sido instalado primeiro.
+ 1091  echo "source <(kubectl completion bash)" >> ~/.bashrc # para adicionar o aut
+ 1092  alias k=kubectl
+ 1093  complete -o default -F __start_kubectl k
+ 1094  k get node
+ 1095  k get cm -n kube-system
+ 1096  k -n kube-system get cm
+ 1097  k -n kube-system get cm coredns 
+ 1098  k -n kube-system edit  cm coredns 
+ 1099  k -n gitlab get all
+ 1100  k get po 
+ 1101  helm install nginx-ingress ingress-nginx/ingress-nginx --set controller.publishService.enabled=true
+ 1102  cat /etc/resolv.conf
+ 1103  nano /etc/resolv.conf 
+ 1104  ping gitlab.mirecloud.com
+ 1105  nano /etc/resolv.conf 
+ 1106  ping gitlab.mirecloud.com
+ 1107  k -n gitlab get all
+ 1108  k -n gitlab logs pod/gitlab-gitlab-runner-65c64676cf-gx57b
+ 1109  k -n gitlab delete  pod/gitlab-gitlab-runner-65c64676cf-gx57b
+ 1110  k -n gitlab get po 
+ 1111  k -n gitlab logs pod/gitlab-gitlab-runner-65c64676cf-d5zhj
+ 1112  export KUBE_EDITOR=nano
+ 1113  k -n kube-system edit  cm coredns 
+ 1114  k replace -f /tmp/kubectl-edit-168571263.yaml --force
+ 1115  cat  coredns-patch.yaml 
+ 1116  nano coredns-patch.yaml 
+ 1117  k replace -f coredns-patch.yaml  --force
+ 1118  cat coredns-patch.yaml 
+ 1119  nano coredns-patch.yaml 
+ 1120  k replace -f coredns-patch.yaml  --force
+ 1121  k -n kube-system  get po 
+ 1122  k -n gitlab get po 
+ 1123  k -n gitlab get  delete po gitlab-gitlab-runner-65c64676cf-d5zhj
+ 1124  k -n gitlab get po 
+ 1125  k -n gitlab get logs gitlab-gitlab-runner-65c64676cf-d5zhj
+ 1126  k -n gitlab logs gitlab-gitlab-runner-65c64676cf-d5zhj
+ 1127  kubectl -n gitlab get secret gitlab-gitlab-tls -o jsonpath="{.data.tls\.crt}" | base64 -d > gitlab.mirecloud.com.crt
+ 1128  k -n gitlab get deploy 
+ 1129  kubectl -n gitlab create secret generic gitlab-ca   --from-file=gitlab.mirecloud.com.crt=gitlab.mirecloud.com.crt
+ 1130  kubectl -n gitlab create serviceaccount gitlab-runner
+ 1131  cd /home/asd/
+ 1132  ls
+ 1133  cd GTILAB/
+ 1134  ls
+ 1135  cat ../coredns.yaml 
+ 1136  k apply -f ../clusterrole.yaml 
+ 1137  k apply -f ../clusterrolebinding.yaml 
+ 1138  cd ..
+ 1139  history | grep gitlab 
+ 1140  history | grep gitlab  \ GREP HELM 
+ 1141  history | grep gitlab  | grep helm 
+ 1142  helm upgrade --install gitlab-runner gitlab/gitlab-runner -n gitlab -f values.yaml
+ 1143  helm uninstall gitlab-runner 
+ 1144  helm uninstall gitlab-runner  -n gitlab 
+ 1145  kubectl -n gitlab get secret 
+ 1146  kubectl -n gitlab get secret gitlab-gitlab-initial-root-password -o yaml 
+ 1147  echo b2xGVjRQTkhJQUJrVzhDVjVZTVc3dlBtQzVGTzA2MjducTI4bGw5Zkt2bW1KSWJkMUtaRWtscmFEaUM5SFFieA== | base64 -d
+ 1148  nano values.yaml 
+ 1149  helm upgrade --install gitlab-runner gitlab/gitlab-runner -n gitlab -f values.yaml
+ 1150  kubectl -n gitlab patch deployment gitlab-runner   -p '{"spec":{"template":{"spec":{"serviceAccountName":"gitlab-runner"}}}}'
+ 1151  kubectl -n gitlab logs -f deploy/gitlab-runner
+ 1152  kubectl get po -A
+ 1153  ssh asd@192.168.2.27
+ 1154  kubectl get po -A
+ 1155  kubectl logs gitlab-gitlab-runner-65c64676cf-jkldg
+ 1156  kubectl logs gitlab-gitlab-runner-65c64676cf-jkldg -n gitlab
+ 1157  kubectl get po -A
+ 1158  helm repo add tetrate-tsb-helm 'https://charts.dl.tetrate.io/public/helm/charts/'
+ 1159  helm repo update
+ 1160  helm search repo tetrate-tsb-helm -l
+ 1161  ls
+ 1162  cat helm-postgres.yaml 
+ 1163  kubectl create ns postgres
+ 1164  cat helm-postgres.yaml 
+ 1165  helm upgrade --install postgres postgres/postgres -n postgres   --set auth.username=admin   --set auth.password=admin   --set auth.database=postgres   --set POSTGRESQL_ALLOW_REMOTE_CONNECTIONS=yes
+ 1166  kubectl -n postgres get all
+ 1167  nano elasticsearch.yaml
+ 1168  kubectl create namespace elasticsearch
+ 1169  kubeactl apply -f elasticsearch.yaml 
+ 1170  kubectl apply -f elasticsearch.yaml 
+ 1171  kubectl get ns
+ 1172  kubectl get ns | grep elasticsearch
+ 1173  kubectl create -f https://download.elastic.co/downloads/eck/3.1.0/crds.yaml -n elasticsearch
+ 1174  kubectl apply -f https://download.elastic.co/downloads/eck/3.1.0/operator.yaml -n elasticsearch
+ 1175  kubectl apply -f https://download.elastic.co/downloads/eck/3.1.0/operator.yaml
+ 1176  kubectl -n elasticsearch get all
+ 1177  kubectl -n elastic-system logs -f statefulset.apps/elastic-operator
+ 1178  kubectl get -n elastic-system pods
+ 1179  kubectl apply -f elasticsearch.yaml 
+ 1180  kubectl -n elasticsearch get all
+ 1181  kubectl -n elasticsearch describe pod/quickstart-es-default-0
+ 1182  kubectl -n elasticsearch get all
+ 1183  kubectl -n elasticsearch describe pod/quickstart-es-default-0
+ 1184  kubectl -n elasticsearch logs pod/quickstart-es-default-0
+ 1185  kubectl -n elasticsearch get all
+ 1186  kubectl -n elasticsearch get all -w
+ 1187  kubectl -n elasticsearch get all --wait
+ 1188  kubectl -n elasticsearch get all -f
+ 1189  kubectl -n elasticsearch get all 
+ 1190  kubectl -n elasticsearch logs pod/quickstart-es-default-0
+ 1191  kubectl get elasticsearch
+ 1192  kubectl get elasticsearch -n elasticsearch
+ 1193  PASSWORD=$(kubectl get secret quickstart-es-elastic-user -o go-template='{{.data.elastic | base64decode}}')
+ 1194  PASSWORD=$(kubectl get secret quickstart-es-elastic-user -o go-template='{{.data.elastic | base64decode}}') -n elasticsearch
+ 1195  PASSWORD=$(kubectl -n elasticseach get secret quickstart-es-elastic-user -o go-template='{{.data.elastic | base64decode}}')
+ 1196  PASSWORD=$(kubectl -n elasticsearch get secret quickstart-es-elastic-user -o go-template='{{.data.elastic | base64decode}}')
+ 1197  echo $PASSWORD
+ 1198  kubectt create ns pgadmin
+ 1199  kubectl create ns pgadmin
+ 1200  helm repo add runix https://helm.runix.net
+ 1201  ls
+ 1202  ls /home/asd/
+ 1203  ls /home/asd/FastApi/
+ 1204  helm install pgadmin runix/pgadmin4
+ 1205  helm install pgadmin runix/pgadmin4 -n pgadmin
+ 1206  export POD_NAME=$(kubectl get pods --namespace pgadmin -l "app.kubernetes.io/name=pgadmin4,app.kubernetes.io/instance=pgadmin" -o jsonpath="{.items[0].metadata.name}")
+ 1207  kubectl port-forward $POD_NAME 8080:80
+ 1208  kubectl port-forward $POD_NAME 8080:80 -n pgadmin
+ 1209  helm uninstall pgadmin  -n pgadmin
+ 1210  helm install pgadmin runix/pgadmin4 --env.email=info@mirecloud.com  --env.password=admin -n pgadmin
+ 1211  helm repo add runix https://helm.runix.net
+ 1212  helm repo update
+ 1213  helm install pgadmin runix/pgadmin4   --namespace pgadmin   --create-namespace   --set env.email=info@mirecloud.com   --set env.password=admin
+ 1214  helm uninstall pgadmin  -n pgadmin
+ 1215  helm install pgadmin runix/pgadmin4   --namespace pgadmin   --create-namespace   --set env.email=info@mirecloud.com   --set env.password=admin  --set service.type=LoadBalancer
+ 1216  kubectl -n pgadmin get all
+ 1217  kubectl -n pgadmin get pvc
+ 1218  kubectl -n pgadmin get all
+ 1219  kubectl -n pgadmin logs pod/pgadmin-pgadmin4-94ddbc769-279mc
+ 1220  kubectl -n pgadmin get all
+ 1221  kubectl -n postgres get svc
+ 1222  echo $PASSWORD
+ 1223  ls
+ 1224  nano tsb-values.yaml
+ 1225  helm install mp tetrate-tsb-helm/managementplane   --namespace tsb  --create-namespace   --values tsb-values.yaml   --timeout 10m 
+ 1226  nano tsb-values.yaml
+ 1227  helm uninstall mp   --namespace tsb  
+ 1228  kubectl get all   --namespace tsb  
+ 1229  helm list -n tsb
+ 1230  helm upgrade --install mp tetrate-tsb-helm/managementplane   --namespace tsb  --create-namespace   --values tsb-values.yaml   --timeout 10m --set image.registry=containers.dl.tetrate.io
+ 1231  helm install mp tetrate-tsb-helm/managementplane   --namespace tsb  --create-namespace   --values tsb-values.yaml   --timeout 10m --set image.registry=containers.dl.tetrate.io
+ 1232  helm uninstall mp   --namespace tsb  
+ 1233  helm uninstall mp   --namespace tsb   --force
+ 1234  helm uninstall mp   --namespace tsb   --help
+ 1235  helm uninstall mp   --namespace tsb  
+ 1236  kubectl get all   --namespace tsb  
+ 1237  kubectl delete deployment.apps/tsb-operator-management-plane   --namespace tsb  
+ 1238  kubectl get all   --namespace tsb  
+ 1239  kubectl delete job.batch/hook-init-finalizer   --namespace tsb  
+ 1240  kubectl get all   --namespace tsb  
+ 1241  kubectl delete service/tsb-operator-management-plane   --namespace tsb  
+ 1242  helm list   --namespace tsb  
+ 1243  helm install mp tetrate-tsb-helm/managementplane   --namespace tsb  --create-namespace   --values tsb-values.yaml   --timeout 10m --set image.registry=containers.dl.tetrate.io
+ 1244  helm install mp1 tetrate-tsb-helm/managementplane   --namespace tsb  --create-namespace   --values tsb-values.yaml   --timeout 10m --set image.registry=containers.dl.tetrate.io
+ 1245  for release in $(helm list -n tsb -q); do   helm uninstall $release -n tsb; done
+ 1246  helm list -n tsb
+ 1247  kubectl delete ns tsb
+ 1248  helm install mp tetrate-tsb-helm/managementplane   --namespace tsb  --create-namespace   --values tsb-values.yaml   --timeout 10m --set image.registry=containers.dl.tetrate.io
+ 1249  ADDRESS=$(kubectl get svc -n "tsb" envoy --output jsonpath='{.status.loadBalancer.ingress[0].ip}')
+ 1250  kubectl -n tsb get all
+ 1251  kubectl -n tsb logs pod/tsb-operator-management-plane-5977b68584-z48gz
+ 1252  kubectl -n tsb describe  pod/tsb-operator-management-plane-5977b68584-z48gz
+ 1253  kubectl get node
+ 1254  kubectl -n tsb describe  pod/tsb-operator-management-plane-5977b68584-z48gz
+ 1255  ls
+ 1256  kubectl delete -f elasticsearch.yaml 
+ 1257  kubkubectl delete  -f https://download.elastic.co/downloads/eck/3.1.0/operator.yaml
+ 1258  kubectl delete  -f https://download.elastic.co/downloads/eck/3.1.0/operator.yaml
+ 1259  kubectl delete -f https://download.elastic.co/downloads/eck/3.1.0/crds.yaml
+ 1260  kubectl -n tsb describe  pod/tsb-operator-management-plane-5977b68584-z48gz
+ 1261  kubectl get all -A
+ 1262  source <(kubectl completion bash) # configuração de autocomplete no bash do shell atual, o pacote bash-completion precisa ter sido instalado primeiro.
+ 1263  echo "source <(kubectl completion bash)" >> ~/.bashrc # para adicionar o aut
+ 1264  alias k=kubectl
+ 1265  complete -o default -F __start_kubectl k
+ 1266  k get node
+ 1267  k get po -A | grep gitlab
+ 1268  k -n gitlab delete po gitlab-gitlab-runner-65c64676cf-j8gp7
+ 1269  k get po -A | grep gitlab
+ 1270  k -n gitlab logs gitlab-gitlab-runner-65c64676cf-n926t
+ 1271  k get po -A | grep gitlab
+ 1272  k -n gitlab logs gitlab-runner-54d7495687-zjtqs
+ 1273  k get po -A | grep gitlab
+ 1274  k get po -A 
+ 1275  k -n tsb  get po  
+ 1276  k -n tsb  describe po tsb-operator-management-plane-5977b68584-jsfdk
+ 1277  source <(kubectl completion bash) # configuração de autocomplete no bash do shell atual, o pacote bash-completion precisa ter sido instalado primeiro.
+ 1278  echo "source <(kubectl completion bash)" >> ~/.bashrc # para adicionar o aut
+ 1279  alias k=kubectl
+ 1280  complete -o default -F __start_kubectl k
+ 1281  k get node
+ 1282  k -n tsb get all
+ 1283  k -n tsb logs pod/tsb-operator-management-plane-5977b68584-8c5jn
+ 1284  k -n tsb describe  pod/tsb-operator-management-plane-5977b68584-8c5jn
+ 1285  ll
+ 1286  nano tsb-values.yaml 
+ 1287  history | grep tsb
+ 1288  containers.istio.tetratelabs.com
+ 1289  helm upgrade --install mp tetrate-tsb-helm/managementplane   --namespace tsb  --create-namespace   --values tsb-values.yaml   --timeout 10m --set image.registry=containers.istio.tetratelabs.com
+ 1290  k -n tsb get all
+ 1291  k -n tsb describe  pod/tsb-operator-management-plane-5977b68584-8c5jn
+ 1292  k -n tsb get all
+ 1293  k -n tsb describe  pod/tsb-operator-management-plane-7bf6d78965-gszvx
+ 1294  helm repo add tis-addons https://tis.tetrate.io/charts
+ 1295  helm repo update
+ 1296  history | grep tsb
+ 1297  helm -n tsb uninstall mp
+ 1298  helm uninstall mp -n tsb
+ 1299  curl -s https://containers.istio.tetratelabs.com/v2/proxyv2/tags/list | jq
+ 1300  curl -s https://containers.istio.tetratelabs.com/v2/proxyv2/tags/list | jq1.27.1-tetrate3",
+ 1301      "1.27.1-tetrate3-debug",
+ 1302      "1.27.1-tetrate3-distroless",
+ 1303      "1.27.1-tetrate3-ubi9",
+ 1304  export TAG=1.27.1-tetrate3-debug
+ 1305  export VERSION=1.27.1
+ 1306  helm repo add tetratelabs https://tis.tetrate.io/charts
+ 1307  helm repo update tetratelabs
+ 1308  helm search repo tetratelabs
+ 1309  helm search repo tetratelabs/base
+ 1310  helm search repo tetratelabs/base --versions
+ 1311  helm search repo tetratelabs/base --versionstetratelabs/base        1.27.10003              1.27.1-tetrate3         Helm chart for deploying Istio cluster resource...
+ 1312  tetratelabs/base        1.27.10002              1.27.1-tetrate2         Helm chart for deploying Istio cluster resource...
+ 1313  tetratelabs/base        1.27.10001              1.27.1-tetrate1         Helm chart for deploying Istio cluster resource...
+ 1314  tetratelabs/base        1.27.10000              1.27.1-tetrate0         Helm chart for deploying Istio cluster resource...
+ 1315  tetratelabs/base        1.27.1+tetrate2         1.27.1-tetrate2         Helm chart for deploying Istio cluster resource...
+ 1316  tetratelabs/base        1.27.1+tetrate3         1.27.1-tetrate3         Helm chart for deploying Istio cluster resource...
+ 1317  tetratelabs/base        1.27.1+tetrate0         1.27.1-tetrate0         Helm chart for deploying Istio cluster resource...
+ 1318  tetratelabs/base        1.27.1+tetrate1         1.27.1-tetrate1         Helm chart for deploying Istio cluster resource...
+ 1319  tetratelabs/base        1.26.30000              1.26.3-tetrate0         Helm chart for deploying Istio cluster resource...
+ 1320  export VERSION=1.27.1-tetrate2
+ 1321  export TAG=1.27.1-tetrate2
+ 1322  helm search repo tetratelabs/base --versions
+ 1323  NAME                    CHART VERSION           APP VERSION             DESCRIPTION
+ 1324  tetratelabs/base        1.27.10003              1.27.1-tetrate3         Helm chart for deploying Istio cluster resource...
+ 1325  export VERSION=1.27.1-tetrate3
+ 1326  export TAG=1.27.10003
+ 1327  kubectl create namespace istio-system
+ 1328  helm install istio-base tetratelabs/base -n istio-system     --set global.tag=${TAG}     --set global.hub="containers.istio.tetratelabs.com"     --version ${VERSION}
+ 1329  helm install istiod tetratelabs/istiod -n istio-system     --set global.tag=${TAG}     --set global.hub="containers.istio.tetratelabs.com"     --version ${VERSION}
+ 1330  helm list 
+ 1331  curl -s https://containers.istio.tetratelabs.com/v2/proxyv2/tags/list | jq
+ 1332  export TAG=1.27.1-tetrate3
+ 1333  export VERSION=1.27.1
+ 1334  kubectl create namespace istio-system
+ 1335  helm install istio-base tetratelabs/base -n istio-system     --set global.tag=${TAG}     --set global.hub="containers.istio.tetratelabs.com"     --version ${VERSION}
+ 1336  helm install istiod tetratelabs/istiod -n istio-system     --set global.tag=${TAG}     --set global.hub="containers.istio.tetratelabs.com"     --version ${VERSION}
+ 1337  helm ls -n istio-system
+ 1338  kubectl get pods -n istio-system
+ 1339  mkdir -p ~/.tctl/bin
+ 1340  curl -Lo ~/.tctl/bin/tctl https://binaries.dl.tetrate.io/public/raw/versions/linux-$(uname -m | sed s/x86_64/amd64/)-1.13.0/tctl
+ 1341  chmod +x ~/.tctl/bin/tctl
+ 1342  export PATH=$PATH:~/.tctl/bin
+ 1343  tctl config users set admin-user --username admin --password 'admin' --org mirecloud --tenant tenant1
+ 1344  kubectl cluster-info 
+ 1345  tctl config clusters set my-tsb --bridge-address 192.168.2.22:6443
+ 1346  tctl config profiles set demo-tsb --cluster my-tsb --username admin-user
+ 1347  tctl config profiles set demo-tsb --cluster my-tsb --username admin-
+ 1348  tctl config profiles list
+ 1349  tctl config profiles set demo-tsb --cluster my-tsb --username admin
+ 1350  tctl config profiles list
+ 1351  source <(tctl completion bash)
+ 1352  tctl version
+ 1353  docker login containers.dl.tetrate.io
+ 1354  docker login containers.tetrate.io
+ 1355  docker login containers.istio.tetratelabs.com
+ 1356  tctl install demo   --registry containers.istio.tetratelabs.com   --admin-password admin
+ 1357  kubectl -n tsb get pods
+ 1358  kubectl -n tsb describe pod <nom_du_pod>
+ 1359  kubectl -n tsb logs <nom_du_pod>
+ 1360  k get po 
+ 1361  kubectl get po 
+ 1362  source <(kubectl completion bash) # configuração de autocomplete no bash do shell atual, o pacote bash-completion precisa ter sido instalado primeiro.
+ 1363  echo "source <(kubectl completion bash)" >> ~/.bashrc # para adicionar o aut
+ 1364  alias k=kubectl
+ 1365  complete -o default -F __start_kubectl k
+ 1366  k -n tsb get po 
+ 1367  k -n tsb describe po tsb-operator-management-plane-7bf6d78965-7gcbv 
+ 1368  k get po -A
+ 1369  helm uninstall gitlab -n gitlab 
+ 1370  k get po -A
+ 1371  hlem -n gitlab list
+ 1372  helm  -n gitlab list
+ 1373  helm uninstall gitlab -n gitlab-runner
+ 1374  k get po -A
+ 1375  tctl install demo   --registry containers.istio.tetratelabs.com   --admin-password admin
+ 1376  tctl version
+ 1377  curl -u USER:PASSWORD https://containers.istio.tetratelabs.com/v2/_catalog
+ 1378  skopeo list-tags docker://containers.istio.tetratelabs.com/tsboperator-server
+ 1379  apt install skopeo
+ 1380  skopeo list-tags docker://containers.istio.tetratelabs.com/tsboperator-server
+ 1381  docker -h
+ 1382  docker images  -h
+ 1383  docker pull containers.istio.tetratelabs.com/tsboperator-server:1.12.2
+ 1384  docker pull containers.istio.tetratelabs.com/tsboperator-server:1.12.0
+ 1385  tctl install demo
+ 1386  tctl install demo   --admin
+ 1387  tctl install demo   --registry -h
+ 1388  kubectl create namespace bookinfo
+ 1389  kubectl label namespace bookinfo istio-injection=enabled
+ 1390  kubectl apply -n bookinfo -f https://raw.githubusercontent.com/istio/istio/master/samples/bookinfo/platform/kube/bookinfo.yaml
+ 1391  kubectl get pods -n bookinfo
+ 1392  kubectl exec "$(kubectl get pod -n bookinfo -l app=ratings -o jsonpath='{.items[0].metadata.name}')"      -n bookinfo -c ratings -- curl -s productpage:9080/productpage |     grep -o "<title>.*</title>"
+ 1393  kubectl get pods -n bookinfo
+ 1394  docker inspect kind | jq '.[0].IPAM.Config[0]'
+ 1395  source <(kubectl completion bash) # configuração de autocomplete no bash do shell atual, o pacote bash-completion precisa ter sido instalado primeiro.
+ 1396  echo "source <(kubectl completion bash)" >> ~/.bashrc # para adicionar o aut
+ 1397  alias k=kubectl
+ 1398  complete -o default -F __start_kubectl k
+ 1399  k  get node
+ 1400  k -n tsb get all
+ 1401  k -n tsb delete deployment.apps/tsb-operator-management-plane
+ 1402  k -n tsb get all
+ 1403  k -n tsb delete job.batch/hook-init-finalizer
+ 1404  k -n tsb get all
+ 1405  k -n tsb  describe po pod/tsb-operator-management-plane-7bf6d78965-7gcbv
+ 1406  k -n tsb  describe pod/tsb-operator-management-plane-7bf6d78965-7gcbv
+ 1407  docker login containers.istio.tetratelabs.com
+ 1408  docker pull containers.istio.tetratelabs.com/tsboperator-server:1.13.0
+ 1409  tctl version
+ 1410  k -n tsb  describe pod/tsb-operator-management-plane-7bf6d78965-7gcbv
+ 1411  k -n tsb get all
+ 1412  kubectl get all -n n8n
+ 1413  kubectl -n n8n prot-forward -h
+ 1414  kubectl -n n8n port-forward -h
+ 1415  kubectl get all -n n8n
+ 1416  kubectl -n n8n port-forward service/n8n  -h
+ 1417  kubectl -n n8n port-forward service/n8n  5678:5678
+ 1418  source <(kubectl completion bash) # configuração de autocomplete no bash do shell atual, o pacote bash-completion precisa ter sido instalado primeiro.
+ 1419  echo "source <(kubectl completion bash)" >> ~/.bashrc # para adicionar o aut
+ 1420  alias k=kubectl
+ 1421  complete -o default -F __start_kubectl k
+ 1422  k get node 
+ 1423  kubectl get all -n n8n
+ 1424  k get node 
+ 1425  kubectl get all -n n8n
+ 1426  kubectl  -n n8n describe pod/n8n-7f6cdbdf69-wnbwm
+ 1427  ll
+ 1428  nano n8n-hosting/kubernetes/n8n-deployment.yaml
+ 1429  docker images
+ 1430  docker images -A
+ 1431  k replace -f n8n-hosting/kubernetes/     --force
+ 1432  kubectl get all -n n8n
+ 1433  k apply  -f n8n-hosting/kubernetes/     
+ 1434  kubectl get all -n n8n
+ 1435  curl https://api.openweathermap.org/data/2.5/weather?q=London&appid=4913899c92445a3385bf03d83d6da4e7
+ 1436  curl https://api.openweathermap.org/data/2.5/weather?q=London
+ 1437  curl https://api.openweathermap.org/data/2.5/weather?q=London&appid=4913899c92445a3385bf03d83d6da4e7
+ 1438  kubectl -n n8n get svc
+ 1439  k -n n8n port-porward svc n8n 5678:5678
+ 1440  kubectl -n n8n port-porward svc n8n 5678:5678
+ 1441  kubectl port-porward svc n8n 5678:5678  -n n8n 
+ 1442  kubectl port-forward svc n8n 5678:5678  -n n8n 
+ 1443  kubectl port-forward svc/n8n 5678:5678  -n n8n 
+ 1444  kubectl get node
+ 1445  kubectl port-forward svc/n8n 5678:5678  -n n8n 
+ 1446  kubectl get ns
+ 1447  sudo swapoff -a
+ 1448  sudo modprobe overlay
+ 1449  sudo modprobe br_netfilter
+ 1450  source <(kubectl completion bash) # configuração de autocomplete no bash do shell atual, o pacote bash-completion precisa ter sido instalado primeiro.
+ 1451  echo "source <(kubectl completion bash)" >> ~/.bashrc # para adicionar o aut
+ 1452  alias k=kubectl
+ 1453  complete -o default -F __start_kubectl k
+ 1454  kubectl -n n8n get svc
+ 1455  kubectl -n n8n get po
+ 1456  curl "https://api.openweathermap.org/data/2.5/weather?id=2643743&appid=4913899c92445a3385bf03d83d6da4e7"
+ 1457  curl "http://api.openweathermap.org/geo/1.0/direct?q=London&limit=1&appid=4913899c92445a3385bf03d83d6da4e7"
+ 1458  curl "http://api.openweathermap.org/geo/1.0/directq=London&limit=1&appid=4913899c92445a3385bf03d83d6da4e7"
+ 1459  kubectl -n n8n get po
+ 1460  kubectl -n n8n logs n8n-98ff6f75d-lbswn 
+ 1461  kubectl -n n8n get po
+ 1462  kubectl -n n8n delete po n8n-98ff6f75d-lbswn 
+ 1463  kubectl -n n8n get po
+ 1464  kubectl -n n8n logs n8n-98ff6f75d-lbswn 
+ 1465  kubectl -n n8n logs n8n-98ff6f75d-jt48t 
+ 1466  kubectl port-forward svc/n8n 5678:5678  -n n8n 
+ 1467  kubectl get po   -n n8n 
+ 1468  kubectl port-forward svc/n8n 5678:5678  -n n8n 
+ 1469  ll
+ 1470  cd /home/asd/
+ 1471  git clone https://github.com/mirecloud/Django.git
+ 1472  cd Django/
+ 1473  python3 -m venv .venv --prompt=store
+ 1474  apt install python3.12-venv
+ 1475  python3 -m venv .venv --prompt=store
+ 1476  LS -LART
+ 1477  ls -lart
+ 1478  source .venv/bin/activate
+ 1479  python -m pip install Django==5.2.7
+ 1480  pip freeze > requirements.txt
+ 1481  ls
+ 1482  cat requirements.txt 
+ 1483  python -m django --version
+ 1484  python -m django startproject my_store .
+ 1485  ls
+ 1486  ls -l my_store/
+ 1487  python manage.py runserver
+ 1488  cd /home/asd/Django/
+ 1489  python manage.py runserver
+ 1490  source .venv/bin/activate
+ 1491  python manage.py runserver
+ 1492  chmod -R  777  /home/asd/
+ 1493  python manage.py runserver
+ 1494  python manage.py createsuperuser
+ 1495  git -b 03-url-exercises
+ 1496  git checkout  -b 03-url-exercises
+ 1497  cd /home/asd/Django/
+ 1498  source .venv/bin/activate
+ 1499  git checkout  -b 03-url-exercises
+ 1500  python manage.py createsuperuser
+ 1501  pip install requirements.txt 
+ 1502  pip install -r  requirements.txt 
+ 1503  python manage.py createsuperuser
+ 1504  ls
+ 1505  rm -rf .
+ 1506  ls
+ 1507  cd ..
+ 1508  rm -rf Django/
+ 1509  ld
+ 1510  ls
+ 1511  git clone https://github.com/mirecloud/Django.git
+ 1512  cd Django/
+ 1513  python3 -m venv .venv --prompt=store
+ 1514  source .venv/bin/activate
+ 1515  python -m pip install Django==5.2.7
+ 1516  python manage.py runserver
+ 1517  python -m django startproject my_store .
+ 1518  python manage.py runserver
+ 1519  chmod -R 777 /home/asd/
+ 1520  python manage.py runserver
+ 1521  clear
+ 1522  python manage.py runserver
+ 1523  cd /home/asd/Django/
+ 1524  ls
+ 1525  python manage.py runserver
+ 1526  source .venv/bin/activate
+ 1527  python manage.py runserver
+ 1528  git checkout -b 05-view-exercises
+ 1529  git add .
+ 1530  git commit -m "adding views "
+ 1531  git checkout -b 05-view-exercises
+ 1532  python manage.py runserver
+ 1533  git add .
+ 1534  git commit -m "adding variables"
+ 1535  python manage.py runserver
+ 1536  git add .
+ 1537  git commit -m "Adding footer"
+ 1538  git push -u origin main
+ 1539  python manage.py test
+ 1540  touch functional_tests/__init__.py
+ 1541  ls
+ 1542  python manage.py test
+ 1543  cd my_store/
+ 1544  python manage.py test
+ 1545  cd ..
+ 1546  python manage.py test
+ 1547  git add .
+ 1548  git commit -n "Adding functional test"
+ 1549  git commit -m "Adding functional test"
+ 1550  python3 manage.py startapp newsletter
+ 1551  cd /home/asd/Django/
+ 1552  source .venv/bin/activate
+ 1553  python manage.py test
+ 1554  chmod -R 777 /home/asd/
+ 1555  python3 manage.py shell
+ 1556  ls
+ 1557  python3 manage.py shell
+ 1558  python3 manage.py makemigrations newsletter
+ 1559  python3 manage.py showmigrations
+ 1560  python3 manage.py migrate
+ 1561  python3 manage.py shell
+ 1562  git add .
+ 1563  git commit -m "adding subscriber test"
+ 1564  git push -u origin main
+ 1565  Bazboutey123$
+ 1566  git push -u origin main
+ 1567  source /home/asd/Django/.venv/bin/activate
+ 1568  python manage.py test
+ 1569  python3 manage.py startapp products
+ 1570  chmod -R 777 /home/
+ 1571  python3 manage.py shell
+ 1572  python3 manage.py makemigrations products
+ 1573  python3 manage.py shell
+ 1574  python3 manage.py migrate
+ 1575  python manage.py shell
+ 1576  python manage.py runserver
+ 1577  clear
+ 1578  python manage.py runserver
+ 1579  python manage.py shell
+ 1580  python manage.py runserver
+ 1581  python manage.py test
+ 1582  python3 manage.py startapp users
+ 1583  git add .
+ 1584  git commit -m "more stuff"
+ 1585  history > history.txt
